@@ -25,7 +25,7 @@ function setCookie(name, value, days) {
 var aff = getParameterByName('aff');
 
 if (!getCookie('affiliateID') && aff) {
-    alert('inside cookie set for 30 days')
+    // alert('inside cookie set for 30 days')
     setCookie('affiliateID', aff, 30);
     fetch('https://api.ipify.org?format=json')
         .then(results => results.json())
