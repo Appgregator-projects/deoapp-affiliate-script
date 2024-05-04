@@ -47,6 +47,7 @@ if (!getCookie('affiliateID') && aff) {
                 
             var data = {
                 ip: ip,
+                type:'click',
                 referrer: referrer,
                 refferer_domain:refferer_domain,
                 pageUrl: pageUrl,

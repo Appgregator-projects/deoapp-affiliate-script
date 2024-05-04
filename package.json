@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "firebase": "^10.11.1",
     "vercel": "^34.1.8",
     "webpack": "^5.91.0"
   },
