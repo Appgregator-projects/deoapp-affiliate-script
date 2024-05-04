@@ -33,7 +33,8 @@ if (!getCookie('affiliateID') && aff) {
         .then(data => {
             var ip = data.ip;
             var referrer = document.referrer;
-            var refferer_domain = new URL(referrer).hostname;
+            console.log(referrer)
+            var refferer_domain = referrer?new URL(referrer).hostname:'direct';
             var pageUrl = window.location.href;
             var userAgent = navigator.userAgent;
 
